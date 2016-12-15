@@ -21,7 +21,6 @@ struct FirstNSquared : Sequence, IteratorProtocol{
         }
         count = 0
     }
-    
     mutating func next() -> Int?{
         if (count >= n) {
             return nil
@@ -30,12 +29,10 @@ struct FirstNSquared : Sequence, IteratorProtocol{
             return (count - 1)
         }
     }
-    
 }
 
 func getSquares(list:FirstNSquared) -> [Int] {
     var newArray: [Int] = []
-    
     for i in list {
         newArray.append( (i * i))
     }

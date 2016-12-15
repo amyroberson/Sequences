@@ -15,6 +15,10 @@
 		E12BB0191E01C8ED001A2548 /* FirstInSquaredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12BB0181E01C8ED001A2548 /* FirstInSquaredTests.swift */; };
 		E12BB01B1E01C8FF001A2548 /* ForwardBackward.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12BB01A1E01C8FF001A2548 /* ForwardBackward.swift */; };
 		E12BB01D1E01C91D001A2548 /* ForwardBackWardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12BB01C1E01C91D001A2548 /* ForwardBackWardTests.swift */; };
+		E15A39171E0210BC0005E21D /* BattleShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A39161E0210BC0005E21D /* BattleShip.swift */; };
+		E15A39191E0218D90005E21D /* BattleshipTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A39181E0218D90005E21D /* BattleshipTest.swift */; };
+		E15A391B1E021B870005E21D /* Collatz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A391A1E021B870005E21D /* Collatz.swift */; };
+		E15A391D1E0220960005E21D /* CollatzTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A391C1E0220960005E21D /* CollatzTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		E12BB0181E01C8ED001A2548 /* FirstInSquaredTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstInSquaredTests.swift; path = ../SequencesCollectionsAndIterators/FirstInSquaredTests.swift; sourceTree = "<group>"; };
 		E12BB01A1E01C8FF001A2548 /* ForwardBackward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForwardBackward.swift; sourceTree = "<group>"; };
 		E12BB01C1E01C91D001A2548 /* ForwardBackWardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForwardBackWardTests.swift; path = ../SequencesCollectionsAndIterators/ForwardBackWardTests.swift; sourceTree = "<group>"; };
+		E15A39161E0210BC0005E21D /* BattleShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleShip.swift; sourceTree = "<group>"; };
+		E15A39181E0218D90005E21D /* BattleshipTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleshipTest.swift; sourceTree = "<group>"; };
+		E15A391A1E021B870005E21D /* Collatz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collatz.swift; sourceTree = "<group>"; };
+		E15A391C1E0220960005E21D /* CollatzTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollatzTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +94,9 @@
 				E12BAFFC1E01C897001A2548 /* Info.plist */,
 				E12BB0161E01C8E0001A2548 /* FirstNSquared.swift */,
 				E12BB0121E01C8AE001A2548 /* Take.swift */,
+				E15A39161E0210BC0005E21D /* BattleShip.swift */,
 				E12BB01A1E01C8FF001A2548 /* ForwardBackward.swift */,
+				E15A391A1E021B870005E21D /* Collatz.swift */,
 			);
 			path = SequencesCollectionsAndIterators;
 			sourceTree = "<group>";
@@ -99,6 +109,8 @@
 				E12BB01C1E01C91D001A2548 /* ForwardBackWardTests.swift */,
 				E12BB0181E01C8ED001A2548 /* FirstInSquaredTests.swift */,
 				E12BB0081E01C897001A2548 /* Info.plist */,
+				E15A391C1E0220960005E21D /* CollatzTest.swift */,
+				E15A39181E0218D90005E21D /* BattleshipTest.swift */,
 			);
 			path = SequencesCollectionsAndIteratorsTests;
 			sourceTree = "<group>";
@@ -217,8 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E12BB01B1E01C8FF001A2548 /* ForwardBackward.swift in Sources */,
+				E15A391B1E021B870005E21D /* Collatz.swift in Sources */,
 				E12BB0131E01C8AE001A2548 /* Take.swift in Sources */,
 				E12BB0171E01C8E0001A2548 /* FirstNSquared.swift in Sources */,
+				E15A39171E0210BC0005E21D /* BattleShip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,9 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15A391D1E0220960005E21D /* CollatzTest.swift in Sources */,
 				E12BB01D1E01C91D001A2548 /* ForwardBackWardTests.swift in Sources */,
 				E12BB0191E01C8ED001A2548 /* FirstInSquaredTests.swift in Sources */,
 				E12BB0071E01C897001A2548 /* SequencesCollectionsAndIteratorsTests.swift in Sources */,
+				E15A39191E0218D90005E21D /* BattleshipTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +447,7 @@
 				E12BB00E1E01C897001A2548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E12BB00F1E01C897001A2548 /* Build configuration list for PBXNativeTarget "SequencesCollectionsAndIteratorsTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +456,7 @@
 				E12BB0111E01C897001A2548 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

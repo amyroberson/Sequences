@@ -7,29 +7,19 @@
 //
 
 import XCTest
+@testable import SequencesCollectionsAndIterators
 
 class ForwardBackWardTests: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testWithArray(){
+        let array = [1,2,3,4,5].makeIterator()
+        let expected = [(1,5), (2,4), (3, 3), (4,2), (5,1)]
+        let result = forwardBackward(input: array)
+        XCTAssert(expected[0] == result[0])
+        XCTAssert(expected[1] == result[1])
+        XCTAssert(expected[2] == result[2])
+        XCTAssert(expected[3] == result[3])
+        XCTAssert(expected[4] == result[4])
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
